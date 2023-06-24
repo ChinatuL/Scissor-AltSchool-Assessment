@@ -8,13 +8,13 @@
 }
 
 .heading-container {
+    margin-bottom: 0.5rem;
     position: relative;
     text-align: center;
-    margin-bottom: 0.5rem;
 }
 
 .heading {
-    width: 59.25rem;
+    width: 59rem;
     height: 12.5rem;
 }
 
@@ -25,31 +25,29 @@
 }
 
 .description {
-    width: 48.8rem;
-    height: 6.6rem;
-    line-height: 1.75rem;
-    font-size: 1.125rem;
-    text-align: center;
+    width: 48rem;
+    height: 6rem;
     margin-bottom: 2rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    text-align: center;
 }
 
 .signup-btn,
 .learn-btn {
-    font-family: Gilroy-semiBold;
-    font-size: 1rem;
+    margin-bottom: 4.19rem;
     cursor: pointer;
     transition: var(--transition);
-    margin-bottom: 4.19rem;
 }
 
 .signup-btn {
-    background-color: var(--primary-blue);
-    color: var(--white);
+    width: 9rem;
     border: none;
     border-radius: 6.25rem;
-    padding: 0.75rem 1.5rem;
-    width: 8.8rem;
     margin-right: 3.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-blue);
+    color: var(--white);
 }
 
 .signup-btn:hover {
@@ -77,14 +75,14 @@
 .hero-img1 {
     position: relative;
     z-index: 5;
-    margin-bottom: 5.56rem;
+    margin-bottom: 5.5rem;
 }
 
 .img-links {
     position: relative;
     z-index: 5;
-    backdrop-filter: blur(106px);
     max-width: 48rem;
+    backdrop-filter: blur(106px);
 }
 
 .img-stone {
@@ -101,5 +99,3 @@
 .img-rectangle {
     width: 100%;
 }
-
-

@@ -1,7 +1,7 @@
 /* *****************HEADER ****************** */
 
 .hero-gradient {
-    background:var(--hero-gradient)
+    background: var(--hero-gradient);
 }
 
 .nav {
@@ -9,9 +9,9 @@
     z-index: 2;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     margin: 0 auto 6.6rem;
     padding-top: 0.75rem;
-    align-items: center;
     max-width: 71.9rem;
     height: 2.75rem;
 }
@@ -33,17 +33,6 @@
     color: var(--primary-blue);
 }
 
-.logo-text {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 1.5rem;
-    font-family: Gilroy-bold;
-    padding-left: 0.5rem;
-    line-height: 2rem;
-    font-weight: bold;
-}
-
-
 .nav-list {
     display: flex;
     justify-content: space-between;
@@ -52,11 +41,8 @@
 
 .nav-link {
     color: var(--main-black);
+    font-size: 1.125rem;
     transition: var(--transition);
-}
-
-.active {
-    color: var(--primary-blue);
 }
 
 .nav-link:hover {
@@ -67,20 +53,28 @@
     color: var(--primary-blue);
 }
 
+.active {
+    color: var(--primary-blue);
+}
+
 .dropdown-btn {
     position: relative;
     border: none;
-    background: transparent;
     padding-left: 0.6rem;
+    background: transparent;
     cursor: pointer;
 }
 
 .dropdown-list {
     display: none;
     position: absolute;
+    min-width: 170px;
     background-color: #fefefe;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    min-width: 170px;
+}
+
+.dropdown:hover .dropdown-list {
+    display: block;
 }
 
 .dropdown-item {
@@ -101,20 +95,16 @@
     color: var(--primary-blue);
 }
 
-.dropdown:hover .dropdown-list {
-    display: block;
-}
-
-.header-btns {
-    width: 13.2rem;
+.login-btn,
+.try-btn {
+    cursor: pointer;
 }
 
 .login-btn {
-    background: transparent;
-    border: none;
-    font: inherit;
-    color: var(--primary-blue);
     margin-right: 1.5rem;
+    border: none;
+    background: transparent;
+    color: var(--primary-blue);
     transition: var(--transition);
 }
 
@@ -124,11 +114,11 @@
 
 .try-btn {
     border: none;
-    background-color: var(--primary-blue);
-    font: inherit;
-    color: var(--white);
     border-radius: 6.25rem;
     padding: 0.75rem 1.5rem;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    line-height: 0.75rem;
     transition: var(--transition);
 }
 
@@ -136,7 +126,3 @@
     opacity: 80%;
 }
 
-.login-btn,
-.try-btn {
-    cursor: pointer;
-}

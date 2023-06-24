@@ -1,5 +1,6 @@
 .bg-footer {
-    background: url(../images/bg-footer-left.svg) no-repeat left bottom, url(../images/bg-footer-right.svg) no-repeat right bottom;
+    background: url(../images/bg-footer-left.svg) no-repeat left bottom,
+        url(../images/bg-footer-right.svg) no-repeat right bottom;
 }
 
 .footer {
@@ -29,12 +30,13 @@
     gap: 1.5rem;
 }
 
-.social-icon path, .social-icon-stroke path{
+.social-icon path,
+.social-icon-stroke path {
     transition: var(--transition);
 }
 
-.social-icon:hover path{
-    fill: var(--primary-blue) !important;
+.social-icon:hover path {
+    fill: var(--primary-blue);
 }
 
 .social-icon-stroke:hover path {
@@ -70,8 +72,8 @@
 .copyright {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
     align-self: flex-end;
+    gap: 0.5rem;
     padding-right: 8rem;
     font-size: 0.875rem;
     line-height: 1.25rem;

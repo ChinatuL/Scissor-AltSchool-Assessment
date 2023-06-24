@@ -1,7 +1,7 @@
 .section-free-trial {
-    padding: 5rem 0;
     justify-content: center;
     align-items: center;
+    padding: 5rem 0;
     background: url(../images/bg-free-trial-left.svg) no-repeat -40px,
         url(../images/bg-free-trial-right.svg) no-repeat right -10px,
         var(--card-gradient);
@@ -11,10 +11,10 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    background-color: var(--white);
     max-width: 29.7rem;
     padding: 2.62rem;
     border-radius: 12px;
+    background-color: var(--white);
 }
 
 .form-control {
@@ -28,7 +28,7 @@
 
 .form-input {
     border: 1px solid var(--tertiary-blue);
-    border-radius: 12px;
+    border-radius: 0.75rem;
     height: 3rem;
 }
 
@@ -39,13 +39,13 @@
     line-height: 1.125rem;
 }
 
-.url-input {
-    width: 100%;
-}
-
 .url-input,
 .alias-input {
     padding: 1rem 1.5rem;
+}
+
+.url-input {
+    width: 100%;
 }
 
 .alias-input {
@@ -53,13 +53,13 @@
 }
 
 .select-domain {
+    width: 50%;
+    padding: 1rem 1.3rem;
     background: url(../images/icon-dropdown-blue.svg) no-repeat 90% 50%;
+    color: var(--tertiary-blue);
     appearance: none;
     font-size: 0.85rem;
     font-family: Gilroy-medium;
-    padding: 1rem 1.3rem;
-    width: 50%;
-    color: var(--tertiary-blue);
 }
 
 .select-domain option {
@@ -71,15 +71,14 @@
     align-items: center;
     justify-content: center;
     gap: 0.625rem;
-    background-color: var(--secondary-blue);
-    padding: 0.75rem 1.5rem;
+    height: 3rem;
     border: none;
     border-radius: 6.25rem;
-    font-size: 0.85rem;
-    font-family: Gilroy-semiBold;
-    line-height: 0.75rem;
-    height: 3rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--secondary-blue);
     color: var(--white);
+    font-size: 0.85rem;
+    line-height: 0.75rem;
     cursor: pointer;
 }
 
@@ -87,10 +86,9 @@
     opacity: 80%;
 }
 
-
 form p {
-    font-size: 0.875rem;
     color: var(--pale-blue);
+    font-size: 0.875rem;
     line-height: 1.25rem;
 }
 
