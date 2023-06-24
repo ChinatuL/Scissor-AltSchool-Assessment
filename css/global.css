@@ -1,0 +1,132 @@
+/* ****************** GLOBAL STYLES *********************** */
+
+@font-face {
+    font-family: Gilroy-medium;
+    src: url(../fonts/Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-semiBold;
+    src: url(../fonts/Gilroy-Semibold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Gilroy-bold;
+    src: url(../fonts/Gilroy-Bold.ttf);
+    font-weight: bold;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --primary-blue: hsl(216, 100%, 50%);
+    --secondary-blue: hsl(216, 100%, 44%);
+    --tertiary-blue:hsl(216, 100%, 60%);
+    --pale-blue: hsl(216, 100%, 64%);
+    --main-black: hsl(0, 0%, 8%);
+    --divider-black: hsl(0, 0%, 84%);
+    --bg-statistics: hsl(210, 50%, 98%);
+    --bg-icon: hsla(216, 100%, 60%, 0.13);
+    font-size: 16px; /* 1rem = 16px; All units are calculated relative to this*/
+    --transition: all 0.3s ease-in-out;
+    --hero-gradient: linear-gradient(
+        to right,
+        hsla(0, 95%, 43%, 0.05) 0,
+        hsla(121, 90%, 25%, 0.05) 33%,
+        hsla(50, 83%, 52%, 0.05) 100%
+    );
+    --card-gradient: linear-gradient(
+        180deg,
+        #1e3448 99.9%,
+        rgba(30, 52, 72, 0) 100%
+    );
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    max-width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    color: var(--main-black);
+    font-family: Gilroy-medium;
+    /* overflow-x: hidden; */
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    font-family: Gilroy-bold;
+    line-height: 3rem;
+}
+
+h3,
+h4 {
+    font-family: Gilroy-semiBold;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 6rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+h6 {
+    font-size: 1rem;
+    font-family: Gilroy-bold;
+    line-height: 1.5rem;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.highlight {
+    color: var(--secondary-blue);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.heading-flex {
+    display: flex;
+    align-items: center;
+}
+
+.heading-flex h2 {
+    margin-left: 1rem;
+}

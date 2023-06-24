@@ -1,0 +1,100 @@
+.section-free-trial {
+    padding: 5rem 0;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/bg-free-trial-left.svg) no-repeat -40px,
+        url(../images/bg-free-trial-right.svg) no-repeat right -10px,
+        var(--card-gradient);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: var(--white);
+    max-width: 29.7rem;
+    padding: 2.62rem;
+    border-radius: 12px;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.form-flex {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.form-input {
+    border: 1px solid var(--tertiary-blue);
+    border-radius: 12px;
+    height: 3rem;
+}
+
+.form-input::placeholder {
+    color: var(--tertiary-blue);
+    font-size: 0.75rem;
+    font-family: Gilroy-medium;
+    line-height: 1.125rem;
+}
+
+.url-input {
+    width: 100%;
+}
+
+.url-input,
+.alias-input {
+    padding: 1rem 1.5rem;
+}
+
+.alias-input {
+    width: 50%;
+}
+
+.select-domain {
+    background: url(../images/dropdown-icon-blue.svg) no-repeat 90% 50%;
+    appearance: none;
+    font-size: 0.85rem;
+    font-family: Gilroy-medium;
+    padding: 1rem 1.3rem;
+    width: 50%;
+    color: var(--tertiary-blue);
+}
+
+.select-domain option {
+    width: max-content;
+}
+
+.submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    background-color: var(--secondary-blue);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6.25rem;
+    font-size: 0.85rem;
+    font-family: Gilroy-semiBold;
+    line-height: 0.75rem;
+    height: 3rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    opacity: 80%;
+}
+
+
+form p {
+    font-size: 0.875rem;
+    color: var(--pale-blue);
+    line-height: 1.25rem;
+}
+
+form a {
+    color: var(--primary-blue);
+    font-family: Gilroy-semiBold;
+}

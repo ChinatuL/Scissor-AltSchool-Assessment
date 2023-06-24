@@ -1,0 +1,104 @@
+.section-pricing {
+    justify-content: center;
+    align-items: center;
+    gap: 4.25rem;
+    margin-bottom: 7rem;
+}
+
+.section-pricing > div > p {
+    line-height: 1.5rem;
+    width: 34.75rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.pricing-cards {
+    display: flex;
+}
+
+.card-teams,
+.card-basic {
+    position: relative;
+    z-index: 1;
+    border: 0.4px solid var(--secondary-blue);
+    border-radius: 12px;
+    align-self: flex-start;
+    margin-top: 5rem;
+}
+
+.card-professional {
+    position: relative;
+    z-index: 2;
+    background: var(--card-gradient);
+    padding: 5.9rem 4rem 9.25rem;
+    color: var(--white);
+    border-radius: 12px;
+}
+
+.card-professional li {
+    background: url(../images/icon-check-circle-dark.svg) no-repeat 0 2px;
+    padding-left: 1.4rem;
+}
+
+.pricing-cards .sub-heading3 {
+    margin-bottom: 2rem;
+}
+
+.plan {
+    font-size: 2.5rem;
+    font-family: Gilroy-bold;
+    line-height: 3rem;
+}
+
+.plan-features li {
+    margin-bottom: 1.5rem;
+}
+
+.card-teams li,
+.card-basic li {
+    background: url(../images/icon-check-circle.svg) no-repeat 0 2px;
+    padding-left: 1.4rem;
+    line-height: 1.5rem;
+}
+
+.card-basic {
+    margin-right: -1rem;
+    padding: 1.5rem 3.5rem 2.8rem 5rem;
+}
+
+.card-teams {
+    margin-left: -1rem;
+    padding: 1.5rem 5rem 2.8rem 3rem;
+}
+
+.btn-custom,
+.btn-pricing {
+    width: 12.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+    padding: 0.75rem 1.5rem;
+    border-radius: 6.25rem;
+    font-family: Gilroy-semiBold;
+    font-size: 1rem;
+}
+
+.btn-custom {
+    background: transparent;
+    border: 1px solid var(--primary-blue);
+    color: var(--primary-blue);
+    margin-right: 0.75rem;
+}
+
+.btn-pricing {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    border: none;
+}
+
+.btn-pricing:hover{
+    opacity: 80%;
+}
+
+.btn-custom:hover {
+    opacity: 60%;
+}

@@ -1,0 +1,28 @@
+.section-get-started {
+    justify-content: center;
+    align-items: center;
+    padding: 6.1rem 3.3rem;
+    background: url(../images/bg-get-started-left.svg) no-repeat -40px top,
+        url(../images/bg-get-started-right.svg) no-repeat right -10px bottom,
+        var(--card-gradient);
+}
+
+.section-get-started .sub-heading {
+    color: var(--white);
+    padding-bottom: 2rem;
+}
+
+.btn-get-started {
+    background-color: var(--primary-blue);
+    border: none;
+    color: var(--white);
+    font-size: 1rem;
+    font-family: Gilroy-semiBold;
+    padding: 0.75rem 1.5rem;
+    width: 12.5rem;
+    border-radius: 6.25rem;
+    cursor: pointer;
+}
+.btn-get-started:hover {
+    opacity: 80%;
+}
