@@ -1,0 +1,412 @@
+@media (max-width: 1024px) {
+    /* **************************** GLOBAL STYLES *************************** */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    /* ************************* HEADER *************************** */
+    .nav {
+        justify-content: space-between;
+        padding: 0.75rem 3rem;
+    }
+
+    .menu-button-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .menu-button,
+    .menu-button::before,
+    .menu-button::after {
+        display: block;
+        background-color: var(--primary-blue);
+        position: absolute;
+        height: 4px;
+        width: 30px;
+        border-radius: 2px;
+        transition: transform 0.2s linear;
+    }
+
+    .menu-button::before {
+        content: "";
+        margin-top: -8px;
+    }
+
+    .menu-button::after {
+        content: "";
+        margin-top: 8px;
+    }
+    .menu,
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .menu {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .nav-list {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: #fefefe;
+    }
+
+    .nav-item {
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+
+    .dropdown-list {
+        left: 40%;
+    }
+
+    .header-btns {
+        display: flex;
+        flex-direction: column;
+        background-color: #fefefe;
+        width: 100%;
+    }
+
+    .login-btn {
+        width: 100%;
+        border-bottom: 1px solid var(--divider-black);
+        margin-right: 0;
+        padding: 0.5rem 0;
+    }
+
+    .try-btn {
+        align-self: center;
+        width: fit-content;
+    }
+
+    #menu-toggle:checked + .menu-button-container .menu-button::before {
+        margin-top: 0px;
+        transform: rotate(405deg);
+    }
+
+    #menu-toggle:checked + .menu-button-container .menu-button {
+        background: transparent;
+    }
+
+    #menu-toggle:checked + .menu-button-container .menu-button::after {
+        margin-top: 0px;
+        transform: rotate(-405deg);
+    }
+
+    #menu-toggle ~ .menu .nav-item,
+    #menu-toggle ~ .menu .login-btn,
+    #menu-toggle ~ .menu .try-btn {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        overflow: hidden;
+        transition: all 0.3s linear;
+    }
+
+    #menu-toggle:checked ~ .menu .nav-item,
+    #menu-toggle:checked ~ .menu .login-btn,
+    #menu-toggle:checked ~ .menu .try-btn {
+        border-bottom: 1px solid var(--divider-black);
+        height: 2.4rem;
+    }
+
+    #menu-toggle:checked ~ .menu .nav-item,
+    #menu-toggle:checked ~ .menu .login-btn {
+        padding: 0.5rem 0;
+    }
+
+    #menu-toggle:checked ~ .menu .try-btn {
+        padding: 0.75rem 1rem;
+    }
+
+    /* ********************** HERO SECTION ************************* */
+    .heading {
+        width: 45rem;
+        height: 13rem;
+        line-height: 4rem;
+    }
+
+    .description {
+        width: 34rem;
+    }
+
+    .underline {
+        top: 58%;
+        left: 50%;
+    }
+
+    .img-links {
+        width: 37rem;
+    }
+
+    .img-stone {
+        height: 200px;
+    }
+
+    /* ************************ FEATURES ***********************************  */
+    .sub-section1 {
+        gap: 3rem;
+        padding: 3.75rem 3rem;
+    }
+
+    .statistics {
+        gap: 2rem;
+    }
+
+    .statistics > div {
+        max-width: 7rem;
+    }
+
+    .sub-section2 {
+        gap: 3rem;
+        padding: 0 3rem;
+    }
+
+    /* ******************* PRICING ********************* */
+    .card-basic {
+        margin-right: -1rem;
+        padding: 1.5rem 2rem 2.8rem 2rem;
+    }
+
+    .card-teams {
+        margin-left: -1rem;
+        padding: 1.5rem 2rem 2.8rem 2rem;
+    }
+
+    .card-professional {
+        padding: 5.9rem 2rem 9.25rem;
+    }
+
+    /* *************************** FAQ *************************** */
+    .section-faq {
+        padding: 3rem 2rem 9.6rem;
+    }
+
+    /* *************************** FOOTER ***************** */
+    .footer-links {
+        gap: 1.5rem;
+    }
+
+    .footer-nav-groups {
+        gap: 1rem;
+    }
+
+    .footer-nav-group {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* ************************** GLOBAL STYLES ********************** */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    /* ***************************** HEADER ************************* */
+
+    .heading {
+        width: 30rem;
+    }
+
+    .underline {
+        top: 90%;
+        left: 15%;
+    }
+
+    .description {
+        width: 100%;
+        padding: 0 3rem;
+    }
+
+    .img-links {
+        width: 26rem;
+    }
+
+    .img-stone {
+        top: -2rem;
+        width: 150px;
+    }
+
+    /* ***************************** FEATURES ********************* */
+    .sub-section1 {
+        flex-direction: column;
+    }
+
+    .statistics {
+        gap: 4rem;
+    }
+
+    .sub-section2 {
+        flex-direction: column;
+    }
+
+    .sub-section2 .heading-flex {
+        justify-content: center;
+    }
+
+    .sub-section2 > div > p {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* *************************** PRICING **************************** */
+    .section-pricing .heading-flex {
+        justify-content: center;
+    }
+
+    .section-pricing > div > p {
+        width: 25rem;
+    }
+
+    .pricing-cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card {
+        width: 60%;
+        padding: 1.5rem 3.5rem;
+    }
+
+    .card-basic,
+    .card-teams {
+        margin-top: 0;
+        align-self: center;
+    }
+
+    .card-professional {
+        margin: 2rem 0;
+    }
+
+    /* ******************************* FAQ ****************************** */
+    .question {
+        width: 80%;
+    }
+
+    /* ********************************* FOOTER **************************** */
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .footer-nav-groups {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1rem;
+    }
+
+    .footer-nav-group {
+        width: max-content;
+    }
+
+    .copyright {
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* ************************** HERO SECTION ********************** */
+    .heading {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+    }
+
+    .underline {
+        display: none;
+    }
+
+    .description {
+        height: auto;
+    }
+    .img-links {
+        width: 20rem;
+    }
+
+    .img-stone {
+        top: -1rem;
+        height: 120px;
+    }
+
+    /* ************************ FEATURES ****************************** */
+
+    .sub-section2 .heading-flex {
+        width: max-content;
+    }
+
+    .feature-flex {
+        grid-template-columns: 1fr;
+    }
+
+    .statistics {
+        grid-template-columns: auto auto;
+    }
+
+    /*  **************************** PRICING *********************** */
+    .section-pricing > div > p {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .section-pricing-btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    /* ******************************* FREE TRIAL ********************* */
+    .form {
+        max-width: 80%;
+        padding: 1.5rem;
+    }
+
+    .select-domain {
+        font-size: 0.55rem;
+    }
+
+    /* *************************** FOOTER ***************************** */
+    .footer {
+        padding: 6rem 2rem 2.5rem;
+    }
+
+    .footer-nav-group {
+        padding: 0;
+    }
+}

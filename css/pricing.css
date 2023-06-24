@@ -59,6 +59,7 @@
 .card-professional li {
     background: url(../images/icon-check-circle-dark.svg) no-repeat 0 2px;
     padding-left: 1.4rem;
+    line-height: 1.5rem;
 }
 
 .plan {

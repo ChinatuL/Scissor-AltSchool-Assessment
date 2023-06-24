@@ -17,7 +17,13 @@
 }
 
 .logo-container {
-    width: 9.7rem;
+    width: 9rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
 }
 
 .logo-container > a > div {
@@ -126,3 +132,8 @@
     opacity: 80%;
 }
 
+#menu-toggle,
+.menu-button-container,
+.menu-button {
+    display: none;
+}

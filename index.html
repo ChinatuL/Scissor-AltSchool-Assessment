@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="./css/faqs.css" />
         <link rel="stylesheet" href="./css/get-started.css" />
         <link rel="stylesheet" href="./css/footer.css" />
+        <link rel="stylesheet" href="./css/responsive.css" />
     </head>
     <body>
         <main>
@@ -47,79 +48,90 @@
                                         </div>
                                     </a>
                                 </div>
-                                <ul class="nav-list">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link active"
-                                            >my URLs</a
-                                        >
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a href="#features" class="nav-link"
-                                            >Features</a
-                                        >
-                                        <button
-                                            type="button"
-                                            class="dropdown-btn"
-                                        >
-                                            <img
-                                                src="./images/icon-dropdown-black.svg"
-                                                alt="Select Feature"
-                                            />
+                                <input type="checkbox" id="menu-toggle" />
+                                <label
+                                    for="menu-toggle"
+                                    class="menu-button-container"
+                                >
+                                    <div class="menu-button"></div>
+                                </label>
+                                <div class="menu">
+                                    <ul class="nav-list">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link active"
+                                                >my URLs</a
+                                            >
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a href="#features" class="nav-link"
+                                                >Features</a
+                                            >
+                                            <button
+                                                type="button"
+                                                class="dropdown-btn"
+                                            >
+                                                <img
+                                                    src="./images/icon-dropdown-black.svg"
+                                                    alt="Select Feature"
+                                                />
+                                            </button>
+                                            <ul class="dropdown-list">
+                                                <li class="dropdown-item">
+                                                    <a
+                                                        href="#url-shortening"
+                                                        class="dropdown-link"
+                                                        >URL Shortening</a
+                                                    >
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a
+                                                        href="#custom-urls"
+                                                        class="dropdown-link"
+                                                        >Custom URLs</a
+                                                    >
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a
+                                                        href="#qr-codes"
+                                                        class="dropdown-link"
+                                                        >QR Codes</a
+                                                    >
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a
+                                                        href="#data-analytics"
+                                                        class="dropdown-link"
+                                                        >Data Analytics</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#pricing" class="nav-link"
+                                                >Pricing</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                href="#get-started"
+                                                class="nav-link"
+                                                >Analytics</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#faqs" class="nav-link"
+                                                >FAQs</a
+                                            >
+                                        </li>
+                                    </ul>
+                                    <div class="header-btns">
+                                        <button type="button" class="login-btn">
+                                            Log in
                                         </button>
-                                        <ul class="dropdown-list">
-                                            <li class="dropdown-item">
-                                                <a
-                                                    href="#url-shortening"
-                                                    class="dropdown-link"
-                                                    >URL Shortening</a
-                                                >
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a
-                                                    href="#custom-urls"
-                                                    class="dropdown-link"
-                                                    >Custom URLs</a
-                                                >
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a
-                                                    href="#qr-codes"
-                                                    class="dropdown-link"
-                                                    >QR Codes</a
-                                                >
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <a
-                                                    href="#data-analytics"
-                                                    class="dropdown-link"
-                                                    >Data Analytics</a
-                                                >
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#pricing" class="nav-link"
-                                            >Pricing</a
-                                        >
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#get-started" class="nav-link"
-                                            >Analytics</a
-                                        >
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#faqs" class="nav-link"
-                                            >FAQs</a
-                                        >
-                                    </li>
-                                </ul>
-                                <div class="header-btns">
-                                    <button type="button" class="login-btn">
-                                        Log in
-                                    </button>
-                                    <a href="#free-trial" class="try-btn">
-                                        Try it for free
-                                    </a>
+                                        <a href="#free-trial" class="try-btn">
+                                            Try it for free
+                                        </a>
+                                    </div>
                                 </div>
                             </nav>
                         </div>
@@ -329,7 +341,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div>
+                    <div class="section-pricing-btns">
                         <button type="button" class="btn-custom">
                             Get Custom Pricing
                         </button>
