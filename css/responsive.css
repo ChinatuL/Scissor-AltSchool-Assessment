@@ -233,7 +233,12 @@
         font-size: 1.6rem;
     }
 
-    /* ***************************** HEADER ************************* */
+    /* ****************************** HEADER ************************* */
+    .nav {
+      margin: 0 auto 3rem;
+    }
+
+    /* ***************************** HERO SECTION ************************* */
 
     .heading {
         width: 30rem;
@@ -246,6 +251,7 @@
 
     .description {
         width: 100%;
+        height: auto;
         padding: 0 3rem;
     }
 
@@ -348,9 +354,6 @@
         display: none;
     }
 
-    .description {
-        height: auto;
-    }
     .img-links {
         width: 20rem;
     }
