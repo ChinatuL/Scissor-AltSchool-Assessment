@@ -21,3 +21,7 @@
 
 - Mobile View
 ![](./screenshots/mobile-view.png)
+
+## Links
+- [Live Site](https://scissor-url-shortner.netlify.app/)
+- [Code](https://github.com/ChinatuL/Scissor-AltSchool-Assessment)
