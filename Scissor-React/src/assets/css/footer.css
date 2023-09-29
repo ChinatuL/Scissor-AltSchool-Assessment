@@ -30,6 +30,7 @@
     gap: 1.5rem;
 }
 
+
 .social-icon path,
 .social-icon-stroke path {
     transition: var(--transition);
