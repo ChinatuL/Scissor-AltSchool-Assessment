@@ -3,8 +3,7 @@
 > A URL Shortner Web App built for AltSchool's First Semester Assessment
 
 ## Technologies Used
-- HTML
-- CSS
+- React 
 
 ## Features
 - Hover effects
